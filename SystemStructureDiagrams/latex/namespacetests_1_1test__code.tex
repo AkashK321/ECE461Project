@@ -1,0 +1,87 @@
+\doxysection{tests.\+test\+\_\+code Namespace Reference}
+\hypertarget{namespacetests_1_1test__code}{}\label{namespacetests_1_1test__code}\index{tests.test\_code@{tests.test\_code}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__code_a61fe9e2cdde54662c35e84b9a1ee9f03}{test\+\_\+count\+\_\+python\+\_\+loc}} (pytest.\+Temp\+Path\+Factory tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__code_adde9e9504648a4938dc36defebfc4ac3}{test\+\_\+run\+\_\+flake8\+\_\+reports}} (Any monkeypatch, pytest.\+Temp\+Path\+Factory tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__code_a648552c22a03c7a2bc03d6f544b821f3}{test\+\_\+get\+\_\+quality\+\_\+no\+\_\+url}} ()
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__code_aa7d6f62515ae7e0370e45250019ecba5}{test\+\_\+get\+\_\+quality\+\_\+unsupported\+\_\+host}} ()
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__code_aa399e26db3367a91d098ee3f073588e8}{test\+\_\+get\+\_\+quality\+\_\+clone\+\_\+fails}} (Any monkeypatch)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__code_acd97d898318642e56717a065581ddc6a}{test\+\_\+get\+\_\+quality\+\_\+no\+\_\+python\+\_\+files}} (Any monkeypatch, pytest.\+Temp\+Path\+Factory tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__code_a9796a7f6db7983a7d0a610875d5e97b0}{test\+\_\+get\+\_\+quality\+\_\+zero\+\_\+errors}} (Any monkeypatch, pytest.\+Temp\+Path\+Factory tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__code_acc85e0484d583bed1ab6b7c26f271534}{test\+\_\+get\+\_\+quality\+\_\+with\+\_\+errors}} (Any monkeypatch, pytest.\+Temp\+Path\+Factory tmp\+\_\+path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tests for CustomObjects.Code.
+
+These tests validate code-analysis helpers and the overall quality scoring:
+ - counting Python lines of code in a repo tree
+ - invoking flake8 and aggregating reported issues
+ - handling unsupported hosts and clone failures
+ - computing quality from LOC and flake8 counts
+
+Network and filesystem operations are mocked/stubbed so tests run offline.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacetests_1_1test__code_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetests_1_1test__code_a61fe9e2cdde54662c35e84b9a1ee9f03}\index{tests.test\_code@{tests.test\_code}!test\_count\_python\_loc@{test\_count\_python\_loc}}
+\index{test\_count\_python\_loc@{test\_count\_python\_loc}!tests.test\_code@{tests.test\_code}}
+\doxysubsubsection{\texorpdfstring{test\_count\_python\_loc()}{test\_count\_python\_loc()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__code_a61fe9e2cdde54662c35e84b9a1ee9f03} 
+ None tests.\+test\+\_\+code.\+test\+\_\+count\+\_\+python\+\_\+loc (\begin{DoxyParamCaption}\item[{pytest.\+Temp\+Path\+Factory}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__code_aa399e26db3367a91d098ee3f073588e8}\index{tests.test\_code@{tests.test\_code}!test\_get\_quality\_clone\_fails@{test\_get\_quality\_clone\_fails}}
+\index{test\_get\_quality\_clone\_fails@{test\_get\_quality\_clone\_fails}!tests.test\_code@{tests.test\_code}}
+\doxysubsubsection{\texorpdfstring{test\_get\_quality\_clone\_fails()}{test\_get\_quality\_clone\_fails()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__code_aa399e26db3367a91d098ee3f073588e8} 
+ None tests.\+test\+\_\+code.\+test\+\_\+get\+\_\+quality\+\_\+clone\+\_\+fails (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__code_acd97d898318642e56717a065581ddc6a}\index{tests.test\_code@{tests.test\_code}!test\_get\_quality\_no\_python\_files@{test\_get\_quality\_no\_python\_files}}
+\index{test\_get\_quality\_no\_python\_files@{test\_get\_quality\_no\_python\_files}!tests.test\_code@{tests.test\_code}}
+\doxysubsubsection{\texorpdfstring{test\_get\_quality\_no\_python\_files()}{test\_get\_quality\_no\_python\_files()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__code_acd97d898318642e56717a065581ddc6a} 
+ None tests.\+test\+\_\+code.\+test\+\_\+get\+\_\+quality\+\_\+no\+\_\+python\+\_\+files (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{, }\item[{pytest.\+Temp\+Path\+Factory}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__code_a648552c22a03c7a2bc03d6f544b821f3}\index{tests.test\_code@{tests.test\_code}!test\_get\_quality\_no\_url@{test\_get\_quality\_no\_url}}
+\index{test\_get\_quality\_no\_url@{test\_get\_quality\_no\_url}!tests.test\_code@{tests.test\_code}}
+\doxysubsubsection{\texorpdfstring{test\_get\_quality\_no\_url()}{test\_get\_quality\_no\_url()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__code_a648552c22a03c7a2bc03d6f544b821f3} 
+ None tests.\+test\+\_\+code.\+test\+\_\+get\+\_\+quality\+\_\+no\+\_\+url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__code_aa7d6f62515ae7e0370e45250019ecba5}\index{tests.test\_code@{tests.test\_code}!test\_get\_quality\_unsupported\_host@{test\_get\_quality\_unsupported\_host}}
+\index{test\_get\_quality\_unsupported\_host@{test\_get\_quality\_unsupported\_host}!tests.test\_code@{tests.test\_code}}
+\doxysubsubsection{\texorpdfstring{test\_get\_quality\_unsupported\_host()}{test\_get\_quality\_unsupported\_host()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__code_aa7d6f62515ae7e0370e45250019ecba5} 
+ None tests.\+test\+\_\+code.\+test\+\_\+get\+\_\+quality\+\_\+unsupported\+\_\+host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__code_acc85e0484d583bed1ab6b7c26f271534}\index{tests.test\_code@{tests.test\_code}!test\_get\_quality\_with\_errors@{test\_get\_quality\_with\_errors}}
+\index{test\_get\_quality\_with\_errors@{test\_get\_quality\_with\_errors}!tests.test\_code@{tests.test\_code}}
+\doxysubsubsection{\texorpdfstring{test\_get\_quality\_with\_errors()}{test\_get\_quality\_with\_errors()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__code_acc85e0484d583bed1ab6b7c26f271534} 
+ None tests.\+test\+\_\+code.\+test\+\_\+get\+\_\+quality\+\_\+with\+\_\+errors (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{, }\item[{pytest.\+Temp\+Path\+Factory}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__code_a9796a7f6db7983a7d0a610875d5e97b0}\index{tests.test\_code@{tests.test\_code}!test\_get\_quality\_zero\_errors@{test\_get\_quality\_zero\_errors}}
+\index{test\_get\_quality\_zero\_errors@{test\_get\_quality\_zero\_errors}!tests.test\_code@{tests.test\_code}}
+\doxysubsubsection{\texorpdfstring{test\_get\_quality\_zero\_errors()}{test\_get\_quality\_zero\_errors()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__code_a9796a7f6db7983a7d0a610875d5e97b0} 
+ None tests.\+test\+\_\+code.\+test\+\_\+get\+\_\+quality\+\_\+zero\+\_\+errors (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{, }\item[{pytest.\+Temp\+Path\+Factory}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__code_adde9e9504648a4938dc36defebfc4ac3}\index{tests.test\_code@{tests.test\_code}!test\_run\_flake8\_reports@{test\_run\_flake8\_reports}}
+\index{test\_run\_flake8\_reports@{test\_run\_flake8\_reports}!tests.test\_code@{tests.test\_code}}
+\doxysubsubsection{\texorpdfstring{test\_run\_flake8\_reports()}{test\_run\_flake8\_reports()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__code_adde9e9504648a4938dc36defebfc4ac3} 
+ None tests.\+test\+\_\+code.\+test\+\_\+run\+\_\+flake8\+\_\+reports (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{, }\item[{pytest.\+Temp\+Path\+Factory}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+

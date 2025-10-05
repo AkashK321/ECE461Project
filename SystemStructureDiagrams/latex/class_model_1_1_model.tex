@@ -1,0 +1,396 @@
+\doxysection{Model.\+Model Class Reference}
+\hypertarget{class_model_1_1_model}{}\label{class_model_1_1_model}\index{Model.Model@{Model.Model}}
+
+
+Collaboration diagram for Model.\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_model_1_1_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class_model_1_1_model_a6ccf817afdd32e220ca1eef71a5e26db}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str model\+\_\+url, str \mbox{\hyperlink{class_model_1_1_model_a5977b7f50e4a6c653f6c7841d76172ac}{dataset\+\_\+url}}, str \mbox{\hyperlink{class_model_1_1_model_afb0218387472d6dea5e89c031c360a16}{code\+\_\+url}})
+\item 
+str \mbox{\hyperlink{class_model_1_1_model_a96f7803ce6fa86b326154dabace69fc3}{get\+\_\+name}} (self)
+\item 
+str \mbox{\hyperlink{class_model_1_1_model_a3d5f52517e7d5a9b2cb5bda40917e142}{get\+\_\+category}} (self)
+\item 
+Tuple\mbox{[}Any, int\mbox{]} \mbox{\hyperlink{class_model_1_1_model_adc22315927794e1a018643792ac15e69}{time\+\_\+metric}} (self, Callable\mbox{[}..., Any\mbox{]} metric\+\_\+func, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Dict\mbox{[}str, float\mbox{]} \mbox{\hyperlink{class_model_1_1_model_a6aee3385f9d8b58012e8f9fb20e084b7}{get\+\_\+size}} (self)
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a3806a1f84bffad6f35385d69483fa2df}{get\+\_\+license}} (self)
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a21f3d9252b647ec4cb16f2fad5402389}{get\+\_\+popularity\+\_\+score}} (self)
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a83c759a7ce760ff8635fc68984b99eda}{get\+\_\+ramp\+\_\+up\+\_\+time}} (self, str api\+\_\+key)
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a98f045ee54212433c52e922178f6aeb8}{get\+\_\+bus\+\_\+factor}} (self)
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a094d7617911feb1fb3150adba50909d8}{get\+\_\+performance\+\_\+claims}} (self, str api\+\_\+key)
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a8d19522a71ab9dc80314e22f36d69b8d}{get\+\_\+dataset\+\_\+and\+\_\+code\+\_\+score}} (self)
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a14d947143bcfcc2d0e5371d55e5563e7}{compute\+\_\+net\+\_\+score}} (self, str api\+\_\+key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_1_1_model_a19f083a1b19d664c2dbf5389fe9c50f3}{url}} = model\+\_\+url
+\item 
+\mbox{\hyperlink{class_model_1_1_model_a5977b7f50e4a6c653f6c7841d76172ac}{dataset\+\_\+url}} = dataset\+\_\+url
+\item 
+\mbox{\hyperlink{class_model_1_1_model_afb0218387472d6dea5e89c031c360a16}{code\+\_\+url}} = code\+\_\+url
+\item 
+str \mbox{\hyperlink{class_model_1_1_model_a91d0f5592119e9e21fa72f2598d16f8e}{name}} = \textquotesingle{}\textquotesingle{}
+\item 
+str \mbox{\hyperlink{class_model_1_1_model_a72d701a4837db9113f379e92369435be}{category}} = \textquotesingle{}\textquotesingle{}
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_aaed4fbe8759c1bc20fbdcd02dc5796bb}{license\+\_\+score}} = 0.\+0
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a918fbc0c8dcb37773bf9fb066ed232d9}{ramp\+\_\+up\+\_\+time}} = 0.\+0
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_aa2e070435c735e0a0ae5308f786116da}{bus\+\_\+factor}} = 0.\+0
+\item 
+\mbox{\hyperlink{class_model_1_1_model_a16dd014bda434debbf3b84851cdc9cd7}{dataset}} = Dataset(\mbox{\hyperlink{class_model_1_1_model_a5977b7f50e4a6c653f6c7841d76172ac}{dataset\+\_\+url}}, model\+\_\+url)
+\item 
+\mbox{\hyperlink{class_model_1_1_model_af0f255459a9b2a309fa23a64337adf99}{code}} = Code(\mbox{\hyperlink{class_model_1_1_model_afb0218387472d6dea5e89c031c360a16}{code\+\_\+url}})
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a7c10b196fc4d47773942e77a9ef4ff32}{performance\+\_\+claims}} = 0.\+0
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a66f169af4c5446520b9c0f9a34e79a0b}{dataset\+\_\+and\+\_\+code\+\_\+score}} = 0.\+0
+\item 
+float \mbox{\hyperlink{class_model_1_1_model_a1d3492c0f6a8b65aae9fd392ceb87610}{net\+\_\+score}} = 0.\+0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_a6130ea912c0eaafd98b6c791a059b000}{size\+\_\+score\+\_\+latency}} = 0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_a35272f578bee93cdba27cc09f6503e80}{license\+\_\+latency}} = 0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_a8f33859cb7a673988549c3f1f47d3500}{ramp\+\_\+up\+\_\+time\+\_\+latency}} = 0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_a90452fe137165387f7638f2bd222c832}{bus\+\_\+factor\+\_\+latency}} = 0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_ad822d54144ae8bcf8ba4f75f2a468d80}{performance\+\_\+claims\+\_\+latency}} = 0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_ad6a3c07c1b01b504b3fd5a8c8e6602fc}{dataset\+\_\+and\+\_\+code\+\_\+score\+\_\+latency}} = 0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_a69269f050f894b84b0d28b88c7a64657}{dataset\+\_\+quality\+\_\+latency}} = 0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_a8d1320636d3321563e85d3c6d98598ab}{code\+\_\+quality\+\_\+latency}} = 0
+\item 
+int \mbox{\hyperlink{class_model_1_1_model_a962876ed1db85dbd2fabec393347214b}{net\+\_\+score\+\_\+latency}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dict \mbox{\hyperlink{class_model_1_1_model_a8f61d4e5c9a65adb90eac9d9aee30146}{size\+\_\+score}} \mbox{[}str, float\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_model_1_1_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_model_1_1_model_a6ccf817afdd32e220ca1eef71a5e26db}\index{Model.Model@{Model.Model}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a6ccf817afdd32e220ca1eef71a5e26db} 
+ None Model.\+Model.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{model\+\_\+url}{, }\item[{str}]{dataset\+\_\+url}{, }\item[{str}]{code\+\_\+url}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_model_1_1_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_1_1_model_a14d947143bcfcc2d0e5371d55e5563e7}\index{Model.Model@{Model.Model}!compute\_net\_score@{compute\_net\_score}}
+\index{compute\_net\_score@{compute\_net\_score}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{compute\_net\_score()}{compute\_net\_score()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a14d947143bcfcc2d0e5371d55e5563e7} 
+ float Model.\+Model.\+compute\+\_\+net\+\_\+score (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{api\+\_\+key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Computes the net score for the model by aggregating various metrics.
+Returns:
+    A float score between 0.0 and 1.0 representing the net score.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_model_a14d947143bcfcc2d0e5371d55e5563e7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_1_1_model_a98f045ee54212433c52e922178f6aeb8}\index{Model.Model@{Model.Model}!get\_bus\_factor@{get\_bus\_factor}}
+\index{get\_bus\_factor@{get\_bus\_factor}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_bus\_factor()}{get\_bus\_factor()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a98f045ee54212433c52e922178f6aeb8} 
+ float Model.\+Model.\+get\+\_\+bus\+\_\+factor (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the bus factor for a given Git repository.
+
+The bus factor is scored on a scale of 0.0 to 1.0. It is based on the
+number of "significant authors" (those with >5% of commits in the last
+year). A score of 1.0 is achieved if there are 5 or more such authors.
+
+Returns:
+    A float score between 0.0 and 1.0. Returns 0.0 if the repository
+    cannot be cloned or has no recent commits.
+\end{DoxyVerb}
+ \Hypertarget{class_model_1_1_model_a3d5f52517e7d5a9b2cb5bda40917e142}\index{Model.Model@{Model.Model}!get\_category@{get\_category}}
+\index{get\_category@{get\_category}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_category()}{get\_category()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a3d5f52517e7d5a9b2cb5bda40917e142} 
+ str Model.\+Model.\+get\+\_\+category (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_model_1_1_model_a8d19522a71ab9dc80314e22f36d69b8d}\index{Model.Model@{Model.Model}!get\_dataset\_and\_code\_score@{get\_dataset\_and\_code\_score}}
+\index{get\_dataset\_and\_code\_score@{get\_dataset\_and\_code\_score}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_dataset\_and\_code\_score()}{get\_dataset\_and\_code\_score()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a8d19522a71ab9dc80314e22f36d69b8d} 
+ float Model.\+Model.\+get\+\_\+dataset\+\_\+and\+\_\+code\+\_\+score (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the dataset and code availability score for the model.
+Returns:
+    A float score between 0.0 and 1.0 representing the average of
+    dataset_availability and code_availability.
+\end{DoxyVerb}
+ \Hypertarget{class_model_1_1_model_a3806a1f84bffad6f35385d69483fa2df}\index{Model.Model@{Model.Model}!get\_license@{get\_license}}
+\index{get\_license@{get\_license}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_license()}{get\_license()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a3806a1f84bffad6f35385d69483fa2df} 
+ float Model.\+Model.\+get\+\_\+license (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the license score for the model.
+Returns:
+    A float representing the license score (1.0 for compatible licenses, 0.0 otherwise).
+\end{DoxyVerb}
+ \Hypertarget{class_model_1_1_model_a96f7803ce6fa86b326154dabace69fc3}\index{Model.Model@{Model.Model}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a96f7803ce6fa86b326154dabace69fc3} 
+ str Model.\+Model.\+get\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extracts the model name from the URL.
+Returns:
+    a string name, or 'unknown-name' if it cannot be determined.
+\end{DoxyVerb}
+ \Hypertarget{class_model_1_1_model_a094d7617911feb1fb3150adba50909d8}\index{Model.Model@{Model.Model}!get\_performance\_claims@{get\_performance\_claims}}
+\index{get\_performance\_claims@{get\_performance\_claims}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_performance\_claims()}{get\_performance\_claims()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a094d7617911feb1fb3150adba50909d8} 
+ float Model.\+Model.\+get\+\_\+performance\+\_\+claims (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{api\+\_\+key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the performance-claims score for the model.
+
+Score is a single float in [0,1] returned by the LLM.
+The LLM is given the model URL and ask for a numeric-only assessment of how well
+performance/evaluation/benchmarks are documented.
+Returns:
+    A float score between 0.0 and 1.0. Returns 0.0 if the repository
+    cannot be cloned or has no recent commits.
+\end{DoxyVerb}
+ \Hypertarget{class_model_1_1_model_a21f3d9252b647ec4cb16f2fad5402389}\index{Model.Model@{Model.Model}!get\_popularity\_score@{get\_popularity\_score}}
+\index{get\_popularity\_score@{get\_popularity\_score}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_popularity\_score()}{get\_popularity\_score()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a21f3d9252b647ec4cb16f2fad5402389} 
+ float Model.\+Model.\+get\+\_\+popularity\+\_\+score (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the popularity score for the model.
+Returns:
+    A float representing the popularity score (1.0 for high popularity, 0.0 for low popularity).
+\end{DoxyVerb}
+ \Hypertarget{class_model_1_1_model_a83c759a7ce760ff8635fc68984b99eda}\index{Model.Model@{Model.Model}!get\_ramp\_up\_time@{get\_ramp\_up\_time}}
+\index{get\_ramp\_up\_time@{get\_ramp\_up\_time}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_ramp\_up\_time()}{get\_ramp\_up\_time()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a83c759a7ce760ff8635fc68984b99eda} 
+ float Model.\+Model.\+get\+\_\+ramp\+\_\+up\+\_\+time (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{api\+\_\+key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the ramp up time for a given hugging face model.
+
+The ramp up time is scored on a scale of 0.0 to 1.0, where 1.0 indicates
+that the model is very easy to get started with, and 0.0 indicates that the model
+is very difficult to get started using.
+
+Returns:
+    A float score between 0.0 and 1.0. Returns 0.0 if the repository
+    cannot be cloned or has no recent commits.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_model_a83c759a7ce760ff8635fc68984b99eda_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_model_1_1_model_a6aee3385f9d8b58012e8f9fb20e084b7}\index{Model.Model@{Model.Model}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a6aee3385f9d8b58012e8f9fb20e084b7} 
+ Dict\mbox{[}str, float\mbox{]} Model.\+Model.\+get\+\_\+size (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the size scores for different devices based on the model's file sizes.
+Returns:
+    A dictionary mapping device names to their size scores.
+\end{DoxyVerb}
+ \Hypertarget{class_model_1_1_model_adc22315927794e1a018643792ac15e69}\index{Model.Model@{Model.Model}!time\_metric@{time\_metric}}
+\index{time\_metric@{time\_metric}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{time\_metric()}{time\_metric()}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_adc22315927794e1a018643792ac15e69} 
+ Tuple\mbox{[}Any, int\mbox{]} Model.\+Model.\+time\+\_\+metric (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Callable\mbox{[}..., Any\mbox{]}}]{metric\+\_\+func}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Measure the time taken by a metric function.
+Args:
+    metric_func: The metric function to be timed.
+    *args: Positional arguments to pass to the metric function.
+    **kwargs: Keyword arguments to pass to the metric function.
+Returns:
+    A tuple of (result, latency_ms)
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_model_1_1_model_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_model_1_1_model_aa2e070435c735e0a0ae5308f786116da}\index{Model.Model@{Model.Model}!bus\_factor@{bus\_factor}}
+\index{bus\_factor@{bus\_factor}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{bus\_factor}{bus\_factor}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_aa2e070435c735e0a0ae5308f786116da} 
+Model.\+Model.\+bus\+\_\+factor = 0.\+0}
+
+\Hypertarget{class_model_1_1_model_a90452fe137165387f7638f2bd222c832}\index{Model.Model@{Model.Model}!bus\_factor\_latency@{bus\_factor\_latency}}
+\index{bus\_factor\_latency@{bus\_factor\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{bus\_factor\_latency}{bus\_factor\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a90452fe137165387f7638f2bd222c832} 
+int Model.\+Model.\+bus\+\_\+factor\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_a72d701a4837db9113f379e92369435be}\index{Model.Model@{Model.Model}!category@{category}}
+\index{category@{category}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{category}{category}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a72d701a4837db9113f379e92369435be} 
+str Model.\+Model.\+category = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_model_1_1_model_af0f255459a9b2a309fa23a64337adf99}\index{Model.Model@{Model.Model}!code@{code}}
+\index{code@{code}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_af0f255459a9b2a309fa23a64337adf99} 
+Model.\+Model.\+code = Code(\mbox{\hyperlink{class_model_1_1_model_afb0218387472d6dea5e89c031c360a16}{code\+\_\+url}})}
+
+\Hypertarget{class_model_1_1_model_a8d1320636d3321563e85d3c6d98598ab}\index{Model.Model@{Model.Model}!code\_quality\_latency@{code\_quality\_latency}}
+\index{code\_quality\_latency@{code\_quality\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{code\_quality\_latency}{code\_quality\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a8d1320636d3321563e85d3c6d98598ab} 
+int Model.\+Model.\+code\+\_\+quality\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_afb0218387472d6dea5e89c031c360a16}\index{Model.Model@{Model.Model}!code\_url@{code\_url}}
+\index{code\_url@{code\_url}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{code\_url}{code\_url}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_afb0218387472d6dea5e89c031c360a16} 
+Model.\+Model.\+code\+\_\+url = code\+\_\+url}
+
+\Hypertarget{class_model_1_1_model_a16dd014bda434debbf3b84851cdc9cd7}\index{Model.Model@{Model.Model}!dataset@{dataset}}
+\index{dataset@{dataset}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{dataset}{dataset}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a16dd014bda434debbf3b84851cdc9cd7} 
+Model.\+Model.\+dataset = Dataset(\mbox{\hyperlink{class_model_1_1_model_a5977b7f50e4a6c653f6c7841d76172ac}{dataset\+\_\+url}}, model\+\_\+url)}
+
+\Hypertarget{class_model_1_1_model_a66f169af4c5446520b9c0f9a34e79a0b}\index{Model.Model@{Model.Model}!dataset\_and\_code\_score@{dataset\_and\_code\_score}}
+\index{dataset\_and\_code\_score@{dataset\_and\_code\_score}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{dataset\_and\_code\_score}{dataset\_and\_code\_score}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a66f169af4c5446520b9c0f9a34e79a0b} 
+Model.\+Model.\+dataset\+\_\+and\+\_\+code\+\_\+score = 0.\+0}
+
+\Hypertarget{class_model_1_1_model_ad6a3c07c1b01b504b3fd5a8c8e6602fc}\index{Model.Model@{Model.Model}!dataset\_and\_code\_score\_latency@{dataset\_and\_code\_score\_latency}}
+\index{dataset\_and\_code\_score\_latency@{dataset\_and\_code\_score\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{dataset\_and\_code\_score\_latency}{dataset\_and\_code\_score\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_ad6a3c07c1b01b504b3fd5a8c8e6602fc} 
+int Model.\+Model.\+dataset\+\_\+and\+\_\+code\+\_\+score\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_a69269f050f894b84b0d28b88c7a64657}\index{Model.Model@{Model.Model}!dataset\_quality\_latency@{dataset\_quality\_latency}}
+\index{dataset\_quality\_latency@{dataset\_quality\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{dataset\_quality\_latency}{dataset\_quality\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a69269f050f894b84b0d28b88c7a64657} 
+int Model.\+Model.\+dataset\+\_\+quality\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_a5977b7f50e4a6c653f6c7841d76172ac}\index{Model.Model@{Model.Model}!dataset\_url@{dataset\_url}}
+\index{dataset\_url@{dataset\_url}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{dataset\_url}{dataset\_url}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a5977b7f50e4a6c653f6c7841d76172ac} 
+Model.\+Model.\+dataset\+\_\+url = dataset\+\_\+url}
+
+\Hypertarget{class_model_1_1_model_a35272f578bee93cdba27cc09f6503e80}\index{Model.Model@{Model.Model}!license\_latency@{license\_latency}}
+\index{license\_latency@{license\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{license\_latency}{license\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a35272f578bee93cdba27cc09f6503e80} 
+int Model.\+Model.\+license\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_aaed4fbe8759c1bc20fbdcd02dc5796bb}\index{Model.Model@{Model.Model}!license\_score@{license\_score}}
+\index{license\_score@{license\_score}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{license\_score}{license\_score}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_aaed4fbe8759c1bc20fbdcd02dc5796bb} 
+Model.\+Model.\+license\+\_\+score = 0.\+0}
+
+\Hypertarget{class_model_1_1_model_a91d0f5592119e9e21fa72f2598d16f8e}\index{Model.Model@{Model.Model}!name@{name}}
+\index{name@{name}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a91d0f5592119e9e21fa72f2598d16f8e} 
+str Model.\+Model.\+name = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{class_model_1_1_model_a1d3492c0f6a8b65aae9fd392ceb87610}\index{Model.Model@{Model.Model}!net\_score@{net\_score}}
+\index{net\_score@{net\_score}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{net\_score}{net\_score}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a1d3492c0f6a8b65aae9fd392ceb87610} 
+float Model.\+Model.\+net\+\_\+score = 0.\+0}
+
+\Hypertarget{class_model_1_1_model_a962876ed1db85dbd2fabec393347214b}\index{Model.Model@{Model.Model}!net\_score\_latency@{net\_score\_latency}}
+\index{net\_score\_latency@{net\_score\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{net\_score\_latency}{net\_score\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a962876ed1db85dbd2fabec393347214b} 
+int Model.\+Model.\+net\+\_\+score\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_a7c10b196fc4d47773942e77a9ef4ff32}\index{Model.Model@{Model.Model}!performance\_claims@{performance\_claims}}
+\index{performance\_claims@{performance\_claims}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{performance\_claims}{performance\_claims}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a7c10b196fc4d47773942e77a9ef4ff32} 
+Model.\+Model.\+performance\+\_\+claims = 0.\+0}
+
+\Hypertarget{class_model_1_1_model_ad822d54144ae8bcf8ba4f75f2a468d80}\index{Model.Model@{Model.Model}!performance\_claims\_latency@{performance\_claims\_latency}}
+\index{performance\_claims\_latency@{performance\_claims\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{performance\_claims\_latency}{performance\_claims\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_ad822d54144ae8bcf8ba4f75f2a468d80} 
+int Model.\+Model.\+performance\+\_\+claims\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_a918fbc0c8dcb37773bf9fb066ed232d9}\index{Model.Model@{Model.Model}!ramp\_up\_time@{ramp\_up\_time}}
+\index{ramp\_up\_time@{ramp\_up\_time}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{ramp\_up\_time}{ramp\_up\_time}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a918fbc0c8dcb37773bf9fb066ed232d9} 
+Model.\+Model.\+ramp\+\_\+up\+\_\+time = 0.\+0}
+
+\Hypertarget{class_model_1_1_model_a8f33859cb7a673988549c3f1f47d3500}\index{Model.Model@{Model.Model}!ramp\_up\_time\_latency@{ramp\_up\_time\_latency}}
+\index{ramp\_up\_time\_latency@{ramp\_up\_time\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{ramp\_up\_time\_latency}{ramp\_up\_time\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a8f33859cb7a673988549c3f1f47d3500} 
+int Model.\+Model.\+ramp\+\_\+up\+\_\+time\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_a8f61d4e5c9a65adb90eac9d9aee30146}\index{Model.Model@{Model.Model}!size\_score@{size\_score}}
+\index{size\_score@{size\_score}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{size\_score}{size\_score}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a8f61d4e5c9a65adb90eac9d9aee30146} 
+Model.\+Model.\+size\+\_\+score \mbox{[}str, float\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_model_1_1_model_a6130ea912c0eaafd98b6c791a059b000}\index{Model.Model@{Model.Model}!size\_score\_latency@{size\_score\_latency}}
+\index{size\_score\_latency@{size\_score\_latency}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{size\_score\_latency}{size\_score\_latency}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a6130ea912c0eaafd98b6c791a059b000} 
+int Model.\+Model.\+size\+\_\+score\+\_\+latency = 0}
+
+\Hypertarget{class_model_1_1_model_a19f083a1b19d664c2dbf5389fe9c50f3}\index{Model.Model@{Model.Model}!url@{url}}
+\index{url@{url}!Model.Model@{Model.Model}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{class_model_1_1_model_a19f083a1b19d664c2dbf5389fe9c50f3} 
+Model.\+Model.\+url = model\+\_\+url}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Custom\+Objects/\mbox{\hyperlink{_model_8py}{Model.\+py}}\end{DoxyCompactItemize}

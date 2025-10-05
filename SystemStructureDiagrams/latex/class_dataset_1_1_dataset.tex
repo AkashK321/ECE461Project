@@ -1,0 +1,134 @@
+\doxysection{Dataset.\+Dataset Class Reference}
+\hypertarget{class_dataset_1_1_dataset}{}\label{class_dataset_1_1_dataset}\index{Dataset.Dataset@{Dataset.Dataset}}
+
+
+Collaboration diagram for Dataset.\+Dataset\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_dataset_1_1_dataset__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class_dataset_1_1_dataset_aaf2ef1373eb755635db68d605a88c6e4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_dataset_1_1_dataset_a915da19192878b4c15443e1b31611ce2}{dataset\+\_\+url}}, \mbox{\hyperlink{class_dataset_1_1_dataset_a5ec04d0db4d101d16a43081888fb329f}{model\+\_\+url}})
+\item 
+float \mbox{\hyperlink{class_dataset_1_1_dataset_afa1027b113ec78f0c3b8c4794a1d914c}{hf\+\_\+popularity\+\_\+score}} (self, str repo\+\_\+id)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{class_dataset_1_1_dataset_a306994dc7118a75d8796324f386cb3ee}{extract\+\_\+training\+\_\+data\+\_\+info}} (self, str \mbox{\hyperlink{class_dataset_1_1_dataset_a5ec04d0db4d101d16a43081888fb329f}{model\+\_\+url}})
+\item 
+Optional\mbox{[}float\mbox{]} \mbox{\hyperlink{class_dataset_1_1_dataset_a15eb7bec498e0613b8bfa6aa0256be6d}{score\+\_\+with\+\_\+llm}} (self, str section\+\_\+text, str api\+\_\+key)
+\item 
+float \mbox{\hyperlink{class_dataset_1_1_dataset_a91414c8db79234848bde715b72202dd1}{get\+\_\+quality}} (self, str api\+\_\+key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dataset_1_1_dataset_a915da19192878b4c15443e1b31611ce2}{dataset\+\_\+url}} = dataset\+\_\+url
+\item 
+\mbox{\hyperlink{class_dataset_1_1_dataset_a5ec04d0db4d101d16a43081888fb329f}{model\+\_\+url}} = model\+\_\+url
+\item 
+float \mbox{\hyperlink{class_dataset_1_1_dataset_a4233a51f4dfe7e1cb74ba88c73b4a274}{dataset\+\_\+availability}} = 1.\+0 if \mbox{\hyperlink{class_dataset_1_1_dataset_a915da19192878b4c15443e1b31611ce2}{dataset\+\_\+url}} else 0.\+0
+\item 
+float \mbox{\hyperlink{class_dataset_1_1_dataset_a6268bdec0fe6ce42abbdc61b81115728}{quality}} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_dataset_1_1_dataset_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dataset_1_1_dataset_aaf2ef1373eb755635db68d605a88c6e4}\index{Dataset.Dataset@{Dataset.Dataset}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_aaf2ef1373eb755635db68d605a88c6e4} 
+ None Dataset.\+Dataset.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dataset\+\_\+url}{, }\item[{}]{model\+\_\+url}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_dataset_1_1_dataset_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dataset_1_1_dataset_a306994dc7118a75d8796324f386cb3ee}\index{Dataset.Dataset@{Dataset.Dataset}!extract\_training\_data\_info@{extract\_training\_data\_info}}
+\index{extract\_training\_data\_info@{extract\_training\_data\_info}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{extract\_training\_data\_info()}{extract\_training\_data\_info()}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_a306994dc7118a75d8796324f386cb3ee} 
+ Optional\mbox{[}str\mbox{]} Dataset.\+Dataset.\+extract\+\_\+training\+\_\+data\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{model\+\_\+url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fetch README.md for a Hugging Face *model* and return the section
+describing training data/datasets.
+Returns None if not found or not a HF model.
+Returns a string snippet from README if found.
+\end{DoxyVerb}
+ \Hypertarget{class_dataset_1_1_dataset_a91414c8db79234848bde715b72202dd1}\index{Dataset.Dataset@{Dataset.Dataset}!get\_quality@{get\_quality}}
+\index{get\_quality@{get\_quality}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{get\_quality()}{get\_quality()}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_a91414c8db79234848bde715b72202dd1} 
+ float Dataset.\+Dataset.\+get\+\_\+quality (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{api\+\_\+key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate dataset_quality score from two metrics:
+    1) Popularity (if self.dataset_url is an HF dataset)
+    2) LLM score from model README (if model_url provided and training section found in README)
+Combine when both exist: 0.5 * LLM + 0.5 * Popularity
+Otherwise use whichever is available.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_dataset_1_1_dataset_a91414c8db79234848bde715b72202dd1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dataset_1_1_dataset_afa1027b113ec78f0c3b8c4794a1d914c}\index{Dataset.Dataset@{Dataset.Dataset}!hf\_popularity\_score@{hf\_popularity\_score}}
+\index{hf\_popularity\_score@{hf\_popularity\_score}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{hf\_popularity\_score()}{hf\_popularity\_score()}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_afa1027b113ec78f0c3b8c4794a1d914c} 
+ float Dataset.\+Dataset.\+hf\+\_\+popularity\+\_\+score (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{repo\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute a popularity score in [0,1] from HF downloads and likes
+using simple log normalization against fixed baselines.
+Returns float in [0,1].
+\end{DoxyVerb}
+ \Hypertarget{class_dataset_1_1_dataset_a15eb7bec498e0613b8bfa6aa0256be6d}\index{Dataset.Dataset@{Dataset.Dataset}!score\_with\_llm@{score\_with\_llm}}
+\index{score\_with\_llm@{score\_with\_llm}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{score\_with\_llm()}{score\_with\_llm()}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_a15eb7bec498e0613b8bfa6aa0256be6d} 
+ Optional\mbox{[}float\mbox{]} Dataset.\+Dataset.\+score\+\_\+with\+\_\+llm (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{section\+\_\+text}{, }\item[{str}]{api\+\_\+key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use LLM to score dataset quality from the README snippet.
+Returns float in [0,1] or None.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_dataset_1_1_dataset_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_dataset_1_1_dataset_a4233a51f4dfe7e1cb74ba88c73b4a274}\index{Dataset.Dataset@{Dataset.Dataset}!dataset\_availability@{dataset\_availability}}
+\index{dataset\_availability@{dataset\_availability}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{dataset\_availability}{dataset\_availability}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_a4233a51f4dfe7e1cb74ba88c73b4a274} 
+float Dataset.\+Dataset.\+dataset\+\_\+availability = 1.\+0 if \mbox{\hyperlink{class_dataset_1_1_dataset_a915da19192878b4c15443e1b31611ce2}{dataset\+\_\+url}} else 0.\+0}
+
+\Hypertarget{class_dataset_1_1_dataset_a915da19192878b4c15443e1b31611ce2}\index{Dataset.Dataset@{Dataset.Dataset}!dataset\_url@{dataset\_url}}
+\index{dataset\_url@{dataset\_url}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{dataset\_url}{dataset\_url}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_a915da19192878b4c15443e1b31611ce2} 
+Dataset.\+Dataset.\+dataset\+\_\+url = dataset\+\_\+url}
+
+\Hypertarget{class_dataset_1_1_dataset_a5ec04d0db4d101d16a43081888fb329f}\index{Dataset.Dataset@{Dataset.Dataset}!model\_url@{model\_url}}
+\index{model\_url@{model\_url}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{model\_url}{model\_url}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_a5ec04d0db4d101d16a43081888fb329f} 
+Dataset.\+Dataset.\+model\+\_\+url = model\+\_\+url}
+
+\Hypertarget{class_dataset_1_1_dataset_a6268bdec0fe6ce42abbdc61b81115728}\index{Dataset.Dataset@{Dataset.Dataset}!quality@{quality}}
+\index{quality@{quality}!Dataset.Dataset@{Dataset.Dataset}}
+\doxysubsubsection{\texorpdfstring{quality}{quality}}
+{\footnotesize\ttfamily \label{class_dataset_1_1_dataset_a6268bdec0fe6ce42abbdc61b81115728} 
+float Dataset.\+Dataset.\+quality = 0.\+0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Custom\+Objects/\mbox{\hyperlink{_dataset_8py}{Dataset.\+py}}\end{DoxyCompactItemize}

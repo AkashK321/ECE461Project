@@ -131,3 +131,9 @@ sys
 json
 logging
 os
+
+# Generated docs and reports
+docs/doxygen/
+docs/diagrams/*.png
+coverage.json
+report.json

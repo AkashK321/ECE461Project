@@ -1,0 +1,85 @@
+\doxysection{tests.\+test\+\_\+cli\+\_\+parser Namespace Reference}
+\hypertarget{namespacetests_1_1test__cli__parser}{}\label{namespacetests_1_1test__cli__parser}\index{tests.test\_cli\_parser@{tests.test\_cli\_parser}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__cli__parser_a228191ad4a5bc111ffb8e645899e4231}{test\+\_\+build\+\_\+parser\+\_\+accepts\+\_\+url\+\_\+file}} (Path tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__cli__parser_ac8919c01ff34e8ee04896dd8b95db267}{test\+\_\+parse\+\_\+input\+\_\+file\+\_\+skips\+\_\+blanks\+\_\+and\+\_\+whitespace}} (Path tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__cli__parser_a16a577582d47108fd86834e16b1d4a5c}{test\+\_\+parse\+\_\+input\+\_\+file\+\_\+parses\+\_\+csv\+\_\+triple}} (Path tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__cli__parser_a2d5e2f24f33d9bd928ebfd0547dc7521}{test\+\_\+parse\+\_\+input\+\_\+file\+\_\+handles\+\_\+missing\+\_\+fields\+\_\+as\+\_\+none}} (Path tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__cli__parser_a892def84ea03ae62b1722c5c6177544b}{test\+\_\+parse\+\_\+input\+\_\+file\+\_\+skips\+\_\+row\+\_\+if\+\_\+model\+\_\+url\+\_\+is\+\_\+missing}} (Path tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__cli__parser_a9a57336d30cbe01ef6951d0900c7dd0c}{test\+\_\+parse\+\_\+input\+\_\+file\+\_\+handles\+\_\+shared\+\_\+dataset}} (Path tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__cli__parser_ae27a0ef14d00d50a804d40e630a1b46b}{test\+\_\+parse\+\_\+input\+\_\+file\+\_\+missing\+\_\+file\+\_\+raises}} (Path tmp\+\_\+path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tests for CLI_parser.
+
+These tests ensure the command-line parser and helper functions behave as expected:
+ - parsing the single positional url_file argument
+ - trimming whitespace and skipping blank/invalid lines
+ - handling CSV triples and carrying forward the last seen dataset URL
+ - error behaviour when files are missing
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacetests_1_1test__cli__parser_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetests_1_1test__cli__parser_a228191ad4a5bc111ffb8e645899e4231}\index{tests.test\_cli\_parser@{tests.test\_cli\_parser}!test\_build\_parser\_accepts\_url\_file@{test\_build\_parser\_accepts\_url\_file}}
+\index{test\_build\_parser\_accepts\_url\_file@{test\_build\_parser\_accepts\_url\_file}!tests.test\_cli\_parser@{tests.test\_cli\_parser}}
+\doxysubsubsection{\texorpdfstring{test\_build\_parser\_accepts\_url\_file()}{test\_build\_parser\_accepts\_url\_file()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__cli__parser_a228191ad4a5bc111ffb8e645899e4231} 
+ None tests.\+test\+\_\+cli\+\_\+parser.\+test\+\_\+build\+\_\+parser\+\_\+accepts\+\_\+url\+\_\+file (\begin{DoxyParamCaption}\item[{Path}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}build_parser should parse a single positional url_file argument.\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__cli__parser_a2d5e2f24f33d9bd928ebfd0547dc7521}\index{tests.test\_cli\_parser@{tests.test\_cli\_parser}!test\_parse\_input\_file\_handles\_missing\_fields\_as\_none@{test\_parse\_input\_file\_handles\_missing\_fields\_as\_none}}
+\index{test\_parse\_input\_file\_handles\_missing\_fields\_as\_none@{test\_parse\_input\_file\_handles\_missing\_fields\_as\_none}!tests.test\_cli\_parser@{tests.test\_cli\_parser}}
+\doxysubsubsection{\texorpdfstring{test\_parse\_input\_file\_handles\_missing\_fields\_as\_none()}{test\_parse\_input\_file\_handles\_missing\_fields\_as\_none()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__cli__parser_a2d5e2f24f33d9bd928ebfd0547dc7521} 
+ None tests.\+test\+\_\+cli\+\_\+parser.\+test\+\_\+parse\+\_\+input\+\_\+file\+\_\+handles\+\_\+missing\+\_\+fields\+\_\+as\+\_\+none (\begin{DoxyParamCaption}\item[{Path}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Blank fields for code or dataset in a CSV row should become None.\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__cli__parser_a9a57336d30cbe01ef6951d0900c7dd0c}\index{tests.test\_cli\_parser@{tests.test\_cli\_parser}!test\_parse\_input\_file\_handles\_shared\_dataset@{test\_parse\_input\_file\_handles\_shared\_dataset}}
+\index{test\_parse\_input\_file\_handles\_shared\_dataset@{test\_parse\_input\_file\_handles\_shared\_dataset}!tests.test\_cli\_parser@{tests.test\_cli\_parser}}
+\doxysubsubsection{\texorpdfstring{test\_parse\_input\_file\_handles\_shared\_dataset()}{test\_parse\_input\_file\_handles\_shared\_dataset()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__cli__parser_a9a57336d30cbe01ef6951d0900c7dd0c} 
+ None tests.\+test\+\_\+cli\+\_\+parser.\+test\+\_\+parse\+\_\+input\+\_\+file\+\_\+handles\+\_\+shared\+\_\+dataset (\begin{DoxyParamCaption}\item[{Path}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If a row has no dataset URL, it should inherit the last one seen.\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__cli__parser_ae27a0ef14d00d50a804d40e630a1b46b}\index{tests.test\_cli\_parser@{tests.test\_cli\_parser}!test\_parse\_input\_file\_missing\_file\_raises@{test\_parse\_input\_file\_missing\_file\_raises}}
+\index{test\_parse\_input\_file\_missing\_file\_raises@{test\_parse\_input\_file\_missing\_file\_raises}!tests.test\_cli\_parser@{tests.test\_cli\_parser}}
+\doxysubsubsection{\texorpdfstring{test\_parse\_input\_file\_missing\_file\_raises()}{test\_parse\_input\_file\_missing\_file\_raises()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__cli__parser_ae27a0ef14d00d50a804d40e630a1b46b} 
+ None tests.\+test\+\_\+cli\+\_\+parser.\+test\+\_\+parse\+\_\+input\+\_\+file\+\_\+missing\+\_\+file\+\_\+raises (\begin{DoxyParamCaption}\item[{Path}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}parse_input_file should raise FileNotFoundError if the file is missing.\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__cli__parser_a16a577582d47108fd86834e16b1d4a5c}\index{tests.test\_cli\_parser@{tests.test\_cli\_parser}!test\_parse\_input\_file\_parses\_csv\_triple@{test\_parse\_input\_file\_parses\_csv\_triple}}
+\index{test\_parse\_input\_file\_parses\_csv\_triple@{test\_parse\_input\_file\_parses\_csv\_triple}!tests.test\_cli\_parser@{tests.test\_cli\_parser}}
+\doxysubsubsection{\texorpdfstring{test\_parse\_input\_file\_parses\_csv\_triple()}{test\_parse\_input\_file\_parses\_csv\_triple()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__cli__parser_a16a577582d47108fd86834e16b1d4a5c} 
+ None tests.\+test\+\_\+cli\+\_\+parser.\+test\+\_\+parse\+\_\+input\+\_\+file\+\_\+parses\+\_\+csv\+\_\+triple (\begin{DoxyParamCaption}\item[{Path}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}CSV lines should be parsed as a tuple of (code, dataset, model).\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__cli__parser_ac8919c01ff34e8ee04896dd8b95db267}\index{tests.test\_cli\_parser@{tests.test\_cli\_parser}!test\_parse\_input\_file\_skips\_blanks\_and\_whitespace@{test\_parse\_input\_file\_skips\_blanks\_and\_whitespace}}
+\index{test\_parse\_input\_file\_skips\_blanks\_and\_whitespace@{test\_parse\_input\_file\_skips\_blanks\_and\_whitespace}!tests.test\_cli\_parser@{tests.test\_cli\_parser}}
+\doxysubsubsection{\texorpdfstring{test\_parse\_input\_file\_skips\_blanks\_and\_whitespace()}{test\_parse\_input\_file\_skips\_blanks\_and\_whitespace()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__cli__parser_ac8919c01ff34e8ee04896dd8b95db267} 
+ None tests.\+test\+\_\+cli\+\_\+parser.\+test\+\_\+parse\+\_\+input\+\_\+file\+\_\+skips\+\_\+blanks\+\_\+and\+\_\+whitespace (\begin{DoxyParamCaption}\item[{Path}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}parse_input_file should skip blank lines and lines with only whitespace.\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__cli__parser_a892def84ea03ae62b1722c5c6177544b}\index{tests.test\_cli\_parser@{tests.test\_cli\_parser}!test\_parse\_input\_file\_skips\_row\_if\_model\_url\_is\_missing@{test\_parse\_input\_file\_skips\_row\_if\_model\_url\_is\_missing}}
+\index{test\_parse\_input\_file\_skips\_row\_if\_model\_url\_is\_missing@{test\_parse\_input\_file\_skips\_row\_if\_model\_url\_is\_missing}!tests.test\_cli\_parser@{tests.test\_cli\_parser}}
+\doxysubsubsection{\texorpdfstring{test\_parse\_input\_file\_skips\_row\_if\_model\_url\_is\_missing()}{test\_parse\_input\_file\_skips\_row\_if\_model\_url\_is\_missing()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__cli__parser_a892def84ea03ae62b1722c5c6177544b} 
+ None tests.\+test\+\_\+cli\+\_\+parser.\+test\+\_\+parse\+\_\+input\+\_\+file\+\_\+skips\+\_\+row\+\_\+if\+\_\+model\+\_\+url\+\_\+is\+\_\+missing (\begin{DoxyParamCaption}\item[{Path}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If a CSV row has no model URL, the entire row should be skipped.\end{DoxyVerb}
+ 

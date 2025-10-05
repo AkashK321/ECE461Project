@@ -1,0 +1,68 @@
+\doxysection{tests.\+test\+\_\+dataset Namespace Reference}
+\hypertarget{namespacetests_1_1test__dataset}{}\label{namespacetests_1_1test__dataset}\index{tests.test\_dataset@{tests.test\_dataset}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtests_1_1test__dataset_1_1_dummy_info}{Dummy\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__dataset_a891ecca2f78e137d838b0de44c726585}{test\+\_\+hf\+\_\+popularity\+\_\+score\+\_\+handles\+\_\+exceptions}} (Any monkeypatch)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__dataset_a2e5225a506b88aa76fbdcb19edfdff32}{test\+\_\+extract\+\_\+training\+\_\+data\+\_\+info\+\_\+non\+\_\+hf}} ()
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__dataset_a29541e448d30766da88e77ff0c686c41}{test\+\_\+extract\+\_\+training\+\_\+data\+\_\+info\+\_\+from\+\_\+readme}} (Any monkeypatch, pytest.\+Temp\+Path\+Factory tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__dataset_ae3c18922b4735d525d5651dc2c335677}{test\+\_\+score\+\_\+with\+\_\+llm\+\_\+returns\+\_\+zero\+\_\+on\+\_\+none}} (Any monkeypatch)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__dataset_a8b494d7868dbe04889a6331adcb3dfdc}{test\+\_\+get\+\_\+quality\+\_\+combination}} (Any monkeypatch)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tests for CustomObjects.Dataset.
+
+These unit tests cover dataset-related utilities and scoring logic:
+ - Hugging Face popularity extraction and robust handling of API errors
+ - extracting a "Training Data" section from a model README
+ - scoring dataset text via the LLM (mocked)
+ - the combined get_quality flow that mixes HF stats and LLM output
+
+Filesystem and network interactions are mocked to keep tests fast and deterministic.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacetests_1_1test__dataset_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetests_1_1test__dataset_a29541e448d30766da88e77ff0c686c41}\index{tests.test\_dataset@{tests.test\_dataset}!test\_extract\_training\_data\_info\_from\_readme@{test\_extract\_training\_data\_info\_from\_readme}}
+\index{test\_extract\_training\_data\_info\_from\_readme@{test\_extract\_training\_data\_info\_from\_readme}!tests.test\_dataset@{tests.test\_dataset}}
+\doxysubsubsection{\texorpdfstring{test\_extract\_training\_data\_info\_from\_readme()}{test\_extract\_training\_data\_info\_from\_readme()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__dataset_a29541e448d30766da88e77ff0c686c41} 
+ None tests.\+test\+\_\+dataset.\+test\+\_\+extract\+\_\+training\+\_\+data\+\_\+info\+\_\+from\+\_\+readme (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{, }\item[{pytest.\+Temp\+Path\+Factory}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__dataset_a2e5225a506b88aa76fbdcb19edfdff32}\index{tests.test\_dataset@{tests.test\_dataset}!test\_extract\_training\_data\_info\_non\_hf@{test\_extract\_training\_data\_info\_non\_hf}}
+\index{test\_extract\_training\_data\_info\_non\_hf@{test\_extract\_training\_data\_info\_non\_hf}!tests.test\_dataset@{tests.test\_dataset}}
+\doxysubsubsection{\texorpdfstring{test\_extract\_training\_data\_info\_non\_hf()}{test\_extract\_training\_data\_info\_non\_hf()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__dataset_a2e5225a506b88aa76fbdcb19edfdff32} 
+ None tests.\+test\+\_\+dataset.\+test\+\_\+extract\+\_\+training\+\_\+data\+\_\+info\+\_\+non\+\_\+hf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__dataset_a8b494d7868dbe04889a6331adcb3dfdc}\index{tests.test\_dataset@{tests.test\_dataset}!test\_get\_quality\_combination@{test\_get\_quality\_combination}}
+\index{test\_get\_quality\_combination@{test\_get\_quality\_combination}!tests.test\_dataset@{tests.test\_dataset}}
+\doxysubsubsection{\texorpdfstring{test\_get\_quality\_combination()}{test\_get\_quality\_combination()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__dataset_a8b494d7868dbe04889a6331adcb3dfdc} 
+ None tests.\+test\+\_\+dataset.\+test\+\_\+get\+\_\+quality\+\_\+combination (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__dataset_a891ecca2f78e137d838b0de44c726585}\index{tests.test\_dataset@{tests.test\_dataset}!test\_hf\_popularity\_score\_handles\_exceptions@{test\_hf\_popularity\_score\_handles\_exceptions}}
+\index{test\_hf\_popularity\_score\_handles\_exceptions@{test\_hf\_popularity\_score\_handles\_exceptions}!tests.test\_dataset@{tests.test\_dataset}}
+\doxysubsubsection{\texorpdfstring{test\_hf\_popularity\_score\_handles\_exceptions()}{test\_hf\_popularity\_score\_handles\_exceptions()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__dataset_a891ecca2f78e137d838b0de44c726585} 
+ None tests.\+test\+\_\+dataset.\+test\+\_\+hf\+\_\+popularity\+\_\+score\+\_\+handles\+\_\+exceptions (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__dataset_ae3c18922b4735d525d5651dc2c335677}\index{tests.test\_dataset@{tests.test\_dataset}!test\_score\_with\_llm\_returns\_zero\_on\_none@{test\_score\_with\_llm\_returns\_zero\_on\_none}}
+\index{test\_score\_with\_llm\_returns\_zero\_on\_none@{test\_score\_with\_llm\_returns\_zero\_on\_none}!tests.test\_dataset@{tests.test\_dataset}}
+\doxysubsubsection{\texorpdfstring{test\_score\_with\_llm\_returns\_zero\_on\_none()}{test\_score\_with\_llm\_returns\_zero\_on\_none()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__dataset_ae3c18922b4735d525d5651dc2c335677} 
+ None tests.\+test\+\_\+dataset.\+test\+\_\+score\+\_\+with\+\_\+llm\+\_\+returns\+\_\+zero\+\_\+on\+\_\+none (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+

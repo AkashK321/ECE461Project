@@ -1,0 +1,51 @@
+\doxysection{tests.\+test\+\_\+llm\+\_\+querier Namespace Reference}
+\hypertarget{namespacetests_1_1test__llm__querier}{}\label{namespacetests_1_1test__llm__querier}\index{tests.test\_llm\_querier@{tests.test\_llm\_querier}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtests_1_1test__llm__querier_1_1_dummy_response}{Dummy\+Response}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__llm__querier_a18e576c3e0230d15db38c5464247569e}{test\+\_\+query\+\_\+success}} (Any monkeypatch)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__llm__querier_a4c92721ae604de30e03df0eb1f80029c}{test\+\_\+query\+\_\+non\+\_\+200}} (Any monkeypatch)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__llm__querier_a92bd6526f3b45811e7f997179302771d}{test\+\_\+query\+\_\+exception}} (Any monkeypatch)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tests for CustomObjects.LLMQuerier.
+
+These unit tests verify that LLMQuerier.query correctly handles:
+ - successful HTTP responses and JSON parsing
+ - non-200 HTTP status codes
+ - exceptions raised by the requests layer
+
+The tests mock the requests.post call so no network I/O occurs.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacetests_1_1test__llm__querier_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetests_1_1test__llm__querier_a92bd6526f3b45811e7f997179302771d}\index{tests.test\_llm\_querier@{tests.test\_llm\_querier}!test\_query\_exception@{test\_query\_exception}}
+\index{test\_query\_exception@{test\_query\_exception}!tests.test\_llm\_querier@{tests.test\_llm\_querier}}
+\doxysubsubsection{\texorpdfstring{test\_query\_exception()}{test\_query\_exception()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__llm__querier_a92bd6526f3b45811e7f997179302771d} 
+ None tests.\+test\+\_\+llm\+\_\+querier.\+test\+\_\+query\+\_\+exception (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__llm__querier_a4c92721ae604de30e03df0eb1f80029c}\index{tests.test\_llm\_querier@{tests.test\_llm\_querier}!test\_query\_non\_200@{test\_query\_non\_200}}
+\index{test\_query\_non\_200@{test\_query\_non\_200}!tests.test\_llm\_querier@{tests.test\_llm\_querier}}
+\doxysubsubsection{\texorpdfstring{test\_query\_non\_200()}{test\_query\_non\_200()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__llm__querier_a4c92721ae604de30e03df0eb1f80029c} 
+ None tests.\+test\+\_\+llm\+\_\+querier.\+test\+\_\+query\+\_\+non\+\_\+200 (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__llm__querier_a18e576c3e0230d15db38c5464247569e}\index{tests.test\_llm\_querier@{tests.test\_llm\_querier}!test\_query\_success@{test\_query\_success}}
+\index{test\_query\_success@{test\_query\_success}!tests.test\_llm\_querier@{tests.test\_llm\_querier}}
+\doxysubsubsection{\texorpdfstring{test\_query\_success()}{test\_query\_success()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__llm__querier_a18e576c3e0230d15db38c5464247569e} 
+ None tests.\+test\+\_\+llm\+\_\+querier.\+test\+\_\+query\+\_\+success (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+

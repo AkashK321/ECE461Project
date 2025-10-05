@@ -1,0 +1,151 @@
+\doxysection{tests.\+test\+\_\+model Namespace Reference}
+\hypertarget{namespacetests_1_1test__model}{}\label{namespacetests_1_1test__model}\index{tests.test\_model@{tests.test\_model}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Model \mbox{\hyperlink{namespacetests_1_1test__model_ae14cc536704266cef0fc91933e3c53df}{model}} ()
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a3b4f8339c05b50cadd16fe7923eef00e}{test\+\_\+compute\+\_\+net\+\_\+score}} (Model \mbox{\hyperlink{namespacetests_1_1test__model_ae14cc536704266cef0fc91933e3c53df}{model}})
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a71b9bf313f22f327319bc0f641012e8b}{test\+\_\+concurrency\+\_\+in\+\_\+compute\+\_\+net\+\_\+score}} (Model \mbox{\hyperlink{namespacetests_1_1test__model_ae14cc536704266cef0fc91933e3c53df}{model}})
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a616437e20fdf993069bf3bf1a00fac7c}{test\+\_\+get\+\_\+name\+\_\+and\+\_\+category\+\_\+and\+\_\+time\+\_\+metric}} ()
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a6c109e694d1f75b2faa948c2db7ef457}{test\+\_\+get\+\_\+size\+\_\+and\+\_\+license\+\_\+and\+\_\+bus\+\_\+factor}} (Any monkeypatch, str tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_ac3d1cc304ffe4684f5037b37d9fa29ff}{test\+\_\+llm\+\_\+dependent\+\_\+methods}} (Any monkeypatch)
+\item 
+Simple\+Namespace \mbox{\hyperlink{namespacetests_1_1test__model_a1c357c30a31239c20f8371efcd985280}{make\+\_\+sibling}} (int size)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a168cc9f045f8083466b7376963720bb9}{test\+\_\+get\+\_\+size\+\_\+small\+\_\+and\+\_\+large}} (Any monkeypatch)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a45c2f02ec0017d2ac9ec1112432bae5f}{test\+\_\+get\+\_\+license\+\_\+with\+\_\+license\+\_\+section}} (Any monkeypatch, str tmp\+\_\+path)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a807cdc4332b0efe99c5d6f85cf47606c}{test\+\_\+get\+\_\+bus\+\_\+factor\+\_\+happy\+\_\+path}} (Any monkeypatch)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a16a52a6d6b2647a37119e29eec880aa5}{test\+\_\+get\+\_\+performance\+\_\+claims\+\_\+non\+\_\+numeric}} (Any monkeypatch)
+\item 
+None \mbox{\hyperlink{namespacetests_1_1test__model_a6fd828aebdf9005c45e68de847dddbc1}{test\+\_\+compute\+\_\+net\+\_\+score\+\_\+combination}} (any monkeypatch)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetests_1_1test__model_a33a40586f2649261dd94b232957d44d5}{created\+\_\+at}} = created\+\_\+at
+\item 
+\mbox{\hyperlink{namespacetests_1_1test__model_a04b52806d554573ab617c74b8f5d856f}{authors}} = authors
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tests for CustomObjects.Model.
+
+These tests exercise the Model scoring pipeline and helpers:
+ - individual metric retrieval methods (size, license, bus factor, ramp-up)
+ - integration/combination logic in compute_net_score
+ - concurrency behaviour to ensure metric getters run in parallel
+ - LLM-dependent methods are mocked to avoid network calls
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacetests_1_1test__model_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetests_1_1test__model_a1c357c30a31239c20f8371efcd985280}\index{tests.test\_model@{tests.test\_model}!make\_sibling@{make\_sibling}}
+\index{make\_sibling@{make\_sibling}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{make\_sibling()}{make\_sibling()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a1c357c30a31239c20f8371efcd985280} 
+ Simple\+Namespace tests.\+test\+\_\+model.\+make\+\_\+sibling (\begin{DoxyParamCaption}\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__model_ae14cc536704266cef0fc91933e3c53df}\index{tests.test\_model@{tests.test\_model}!model@{model}}
+\index{model@{model}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{model()}{model()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_ae14cc536704266cef0fc91933e3c53df} 
+ Model tests.\+test\+\_\+model.\+model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set up a new Model instance for each test.\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__model_a3b4f8339c05b50cadd16fe7923eef00e}\index{tests.test\_model@{tests.test\_model}!test\_compute\_net\_score@{test\_compute\_net\_score}}
+\index{test\_compute\_net\_score@{test\_compute\_net\_score}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_compute\_net\_score()}{test\_compute\_net\_score()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a3b4f8339c05b50cadd16fe7923eef00e} 
+ None tests.\+test\+\_\+model.\+test\+\_\+compute\+\_\+net\+\_\+score (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Test that the net score is computed correctly.\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__model_a6fd828aebdf9005c45e68de847dddbc1}\index{tests.test\_model@{tests.test\_model}!test\_compute\_net\_score\_combination@{test\_compute\_net\_score\_combination}}
+\index{test\_compute\_net\_score\_combination@{test\_compute\_net\_score\_combination}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_compute\_net\_score\_combination()}{test\_compute\_net\_score\_combination()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a6fd828aebdf9005c45e68de847dddbc1} 
+ None tests.\+test\+\_\+model.\+test\+\_\+compute\+\_\+net\+\_\+score\+\_\+combination (\begin{DoxyParamCaption}\item[{any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__model_a71b9bf313f22f327319bc0f641012e8b}\index{tests.test\_model@{tests.test\_model}!test\_concurrency\_in\_compute\_net\_score@{test\_concurrency\_in\_compute\_net\_score}}
+\index{test\_concurrency\_in\_compute\_net\_score@{test\_concurrency\_in\_compute\_net\_score}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_concurrency\_in\_compute\_net\_score()}{test\_concurrency\_in\_compute\_net\_score()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a71b9bf313f22f327319bc0f641012e8b} 
+ None tests.\+test\+\_\+model.\+test\+\_\+concurrency\+\_\+in\+\_\+compute\+\_\+net\+\_\+score (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Test that attribute-getting functions are called concurrently.\end{DoxyVerb}
+ \Hypertarget{namespacetests_1_1test__model_a807cdc4332b0efe99c5d6f85cf47606c}\index{tests.test\_model@{tests.test\_model}!test\_get\_bus\_factor\_happy\_path@{test\_get\_bus\_factor\_happy\_path}}
+\index{test\_get\_bus\_factor\_happy\_path@{test\_get\_bus\_factor\_happy\_path}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_get\_bus\_factor\_happy\_path()}{test\_get\_bus\_factor\_happy\_path()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a807cdc4332b0efe99c5d6f85cf47606c} 
+ None tests.\+test\+\_\+model.\+test\+\_\+get\+\_\+bus\+\_\+factor\+\_\+happy\+\_\+path (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__model_a45c2f02ec0017d2ac9ec1112432bae5f}\index{tests.test\_model@{tests.test\_model}!test\_get\_license\_with\_license\_section@{test\_get\_license\_with\_license\_section}}
+\index{test\_get\_license\_with\_license\_section@{test\_get\_license\_with\_license\_section}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_get\_license\_with\_license\_section()}{test\_get\_license\_with\_license\_section()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a45c2f02ec0017d2ac9ec1112432bae5f} 
+ None tests.\+test\+\_\+model.\+test\+\_\+get\+\_\+license\+\_\+with\+\_\+license\+\_\+section (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{, }\item[{str}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__model_a616437e20fdf993069bf3bf1a00fac7c}\index{tests.test\_model@{tests.test\_model}!test\_get\_name\_and\_category\_and\_time\_metric@{test\_get\_name\_and\_category\_and\_time\_metric}}
+\index{test\_get\_name\_and\_category\_and\_time\_metric@{test\_get\_name\_and\_category\_and\_time\_metric}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_get\_name\_and\_category\_and\_time\_metric()}{test\_get\_name\_and\_category\_and\_time\_metric()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a616437e20fdf993069bf3bf1a00fac7c} 
+ None tests.\+test\+\_\+model.\+test\+\_\+get\+\_\+name\+\_\+and\+\_\+category\+\_\+and\+\_\+time\+\_\+metric (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__model_a16a52a6d6b2647a37119e29eec880aa5}\index{tests.test\_model@{tests.test\_model}!test\_get\_performance\_claims\_non\_numeric@{test\_get\_performance\_claims\_non\_numeric}}
+\index{test\_get\_performance\_claims\_non\_numeric@{test\_get\_performance\_claims\_non\_numeric}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_get\_performance\_claims\_non\_numeric()}{test\_get\_performance\_claims\_non\_numeric()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a16a52a6d6b2647a37119e29eec880aa5} 
+ None tests.\+test\+\_\+model.\+test\+\_\+get\+\_\+performance\+\_\+claims\+\_\+non\+\_\+numeric (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__model_a6c109e694d1f75b2faa948c2db7ef457}\index{tests.test\_model@{tests.test\_model}!test\_get\_size\_and\_license\_and\_bus\_factor@{test\_get\_size\_and\_license\_and\_bus\_factor}}
+\index{test\_get\_size\_and\_license\_and\_bus\_factor@{test\_get\_size\_and\_license\_and\_bus\_factor}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_get\_size\_and\_license\_and\_bus\_factor()}{test\_get\_size\_and\_license\_and\_bus\_factor()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a6c109e694d1f75b2faa948c2db7ef457} 
+ None tests.\+test\+\_\+model.\+test\+\_\+get\+\_\+size\+\_\+and\+\_\+license\+\_\+and\+\_\+bus\+\_\+factor (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{, }\item[{str}]{tmp\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetests_1_1test__model_a168cc9f045f8083466b7376963720bb9}\index{tests.test\_model@{tests.test\_model}!test\_get\_size\_small\_and\_large@{test\_get\_size\_small\_and\_large}}
+\index{test\_get\_size\_small\_and\_large@{test\_get\_size\_small\_and\_large}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_get\_size\_small\_and\_large()}{test\_get\_size\_small\_and\_large()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a168cc9f045f8083466b7376963720bb9} 
+ None tests.\+test\+\_\+model.\+test\+\_\+get\+\_\+size\+\_\+small\+\_\+and\+\_\+large (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetests_1_1test__model_a168cc9f045f8083466b7376963720bb9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacetests_1_1test__model_ac3d1cc304ffe4684f5037b37d9fa29ff}\index{tests.test\_model@{tests.test\_model}!test\_llm\_dependent\_methods@{test\_llm\_dependent\_methods}}
+\index{test\_llm\_dependent\_methods@{test\_llm\_dependent\_methods}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{test\_llm\_dependent\_methods()}{test\_llm\_dependent\_methods()}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_ac3d1cc304ffe4684f5037b37d9fa29ff} 
+ None tests.\+test\+\_\+model.\+test\+\_\+llm\+\_\+dependent\+\_\+methods (\begin{DoxyParamCaption}\item[{Any}]{monkeypatch}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacetests_1_1test__model_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetests_1_1test__model_a04b52806d554573ab617c74b8f5d856f}\index{tests.test\_model@{tests.test\_model}!authors@{authors}}
+\index{authors@{authors}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{authors}{authors}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a04b52806d554573ab617c74b8f5d856f} 
+tests.\+test\+\_\+model.\+authors = authors}
+
+\Hypertarget{namespacetests_1_1test__model_a33a40586f2649261dd94b232957d44d5}\index{tests.test\_model@{tests.test\_model}!created\_at@{created\_at}}
+\index{created\_at@{created\_at}!tests.test\_model@{tests.test\_model}}
+\doxysubsubsection{\texorpdfstring{created\_at}{created\_at}}
+{\footnotesize\ttfamily \label{namespacetests_1_1test__model_a33a40586f2649261dd94b232957d44d5} 
+tests.\+test\+\_\+model.\+created\+\_\+at = created\+\_\+at}
+

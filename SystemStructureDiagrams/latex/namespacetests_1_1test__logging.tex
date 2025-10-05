@@ -1,0 +1,20 @@
+\doxysection{tests.\+test\+\_\+logging Namespace Reference}
+\hypertarget{namespacetests_1_1test__logging}{}\label{namespacetests_1_1test__logging}\index{tests.test\_logging@{tests.test\_logging}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtests_1_1test__logging_1_1_test_logging}{Test\+Logging}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tests for logging functionality.
+
+These tests ensure the logging setup function behaves correctly:
+ - Setting up logging based on LOG_LEVEL and LOG_FILE environment variables
+ - Creating blank log files for silent mode (LOG_LEVEL=0)
+ - Configuring proper logging levels for INFO (LOG_LEVEL=1) and DEBUG (LOG_LEVEL=2)
+ - Handling invalid or missing environment variables
+ - Error handling for invalid log file paths and permissions
+\end{DoxyVerb}
+ 

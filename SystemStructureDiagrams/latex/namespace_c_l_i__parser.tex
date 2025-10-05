@@ -1,0 +1,37 @@
+\doxysection{CLI\+\_\+parser Namespace Reference}
+\hypertarget{namespace_c_l_i__parser}{}\label{namespace_c_l_i__parser}\index{CLI\_parser@{CLI\_parser}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+argparse.\+Argument\+Parser \mbox{\hyperlink{namespace_c_l_i__parser_a033a0cba9b7957b137f267627ceec357}{build\+\_\+parser}} ()
+\item 
+List\mbox{[}Tuple\mbox{[}Optional\mbox{[}str\mbox{]}, Optional\mbox{[}str\mbox{]}, str\mbox{]}\mbox{]} \mbox{\hyperlink{namespace_c_l_i__parser_a9ce813ed85457796e10d46aa9a5bff64}{parse\+\_\+input\+\_\+file}} (Path path)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_c_l_i__parser_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_c_l_i__parser_a033a0cba9b7957b137f267627ceec357}\index{CLI\_parser@{CLI\_parser}!build\_parser@{build\_parser}}
+\index{build\_parser@{build\_parser}!CLI\_parser@{CLI\_parser}}
+\doxysubsubsection{\texorpdfstring{build\_parser()}{build\_parser()}}
+{\footnotesize\ttfamily \label{namespace_c_l_i__parser_a033a0cba9b7957b137f267627ceec357} 
+ argparse.\+Argument\+Parser CLI\+\_\+parser.\+build\+\_\+parser (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Builds the argument parser for the CLI.
+
+Returns:
+    An argparse.ArgumentParser instance.
+\end{DoxyVerb}
+ \Hypertarget{namespace_c_l_i__parser_a9ce813ed85457796e10d46aa9a5bff64}\index{CLI\_parser@{CLI\_parser}!parse\_input\_file@{parse\_input\_file}}
+\index{parse\_input\_file@{parse\_input\_file}!CLI\_parser@{CLI\_parser}}
+\doxysubsubsection{\texorpdfstring{parse\_input\_file()}{parse\_input\_file()}}
+{\footnotesize\ttfamily \label{namespace_c_l_i__parser_a9ce813ed85457796e10d46aa9a5bff64} 
+ List\mbox{[}Tuple\mbox{[}Optional\mbox{[}str\mbox{]}, Optional\mbox{[}str\mbox{]}, str\mbox{]}\mbox{]} CLI\+\_\+parser.\+parse\+\_\+input\+\_\+file (\begin{DoxyParamCaption}\item[{Path}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses the URL file, handling blank fields and shared datasets.
+
+Returns:
+    A list of tuples, where each tuple is (code_url, dataset_url, model_url).
+\end{DoxyVerb}
+ 

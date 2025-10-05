@@ -1,0 +1,80 @@
+\doxysection{main Namespace Reference}
+\hypertarget{namespacemain}{}\label{namespacemain}\index{main@{main}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacemain_a226caa81f2ad670bb17f16bcbb379587}{format\+\_\+output}} (dict rec)
+\item 
+\mbox{\hyperlink{namespacemain_aeb6eae8c5b406f7159a7f4196185fa9e}{setup\+\_\+logging}} ()
+\item 
+None \mbox{\hyperlink{namespacemain_ab50fd96a4c4c64a539c0a391f32b3d34}{validate\+\_\+github\+\_\+token}} ()
+\item 
+\mbox{\hyperlink{namespacemain_a3140e9a5b6a71ffbf498198cfc471b88}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacemain_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacemain_a226caa81f2ad670bb17f16bcbb379587}\index{main@{main}!format\_output@{format\_output}}
+\index{format\_output@{format\_output}!main@{main}}
+\doxysubsubsection{\texorpdfstring{format\_output()}{format\_output()}}
+{\footnotesize\ttfamily \label{namespacemain_a226caa81f2ad670bb17f16bcbb379587} 
+ str main.\+format\+\_\+output (\begin{DoxyParamCaption}\item[{dict}]{rec}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Formats the output for a single model to match the expected output format.
+Returns a JSON string.
+\end{DoxyVerb}
+ \Hypertarget{namespacemain_a3140e9a5b6a71ffbf498198cfc471b88}\index{main@{main}!main@{main}}
+\index{main@{main}!main@{main}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{namespacemain_a3140e9a5b6a71ffbf498198cfc471b88} 
+main.\+main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Main entry point for the program. Parses command line arguments, processes URLs, and computes scores for each model.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{namespacemain_a3140e9a5b6a71ffbf498198cfc471b88_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacemain_aeb6eae8c5b406f7159a7f4196185fa9e}\index{main@{main}!setup\_logging@{setup\_logging}}
+\index{setup\_logging@{setup\_logging}!main@{main}}
+\doxysubsubsection{\texorpdfstring{setup\_logging()}{setup\_logging()}}
+{\footnotesize\ttfamily \label{namespacemain_aeb6eae8c5b406f7159a7f4196185fa9e} 
+main.\+setup\+\_\+logging (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the root logger based on environment variables.
+
+Reads LOG_LEVEL and LOG_FILE from the environment to set up logging.
+- LOG_LEVEL: 0 for silent (creates a blank log file), 1 for INFO, 2 for DEBUG.
+- LOG_FILE: The path to the log file.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{namespacemain_aeb6eae8c5b406f7159a7f4196185fa9e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacemain_ab50fd96a4c4c64a539c0a391f32b3d34}\index{main@{main}!validate\_github\_token@{validate\_github\_token}}
+\index{validate\_github\_token@{validate\_github\_token}!main@{main}}
+\doxysubsubsection{\texorpdfstring{validate\_github\_token()}{validate\_github\_token()}}
+{\footnotesize\ttfamily \label{namespacemain_ab50fd96a4c4c64a539c0a391f32b3d34} 
+ None main.\+validate\+\_\+github\+\_\+token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Validates the GITHUB_TOKEN environment variable if it is set.
+If GITHUB_TOKEN is set, verify it by hitting the GitHub API /user endpoint.
+- If the token yields a 401, exit with an error (invalid token).
+- If the request fails for other reasons, print a warning but continue.
+- If no token is set, do nothing.
+\end{DoxyVerb}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{namespacemain_ab50fd96a4c4c64a539c0a391f32b3d34_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,121 @@
+\doxysection{Code.\+Code Class Reference}
+\hypertarget{class_code_1_1_code}{}\label{class_code_1_1_code}\index{Code.Code@{Code.Code}}
+
+
+Collaboration diagram for Code.\+Code\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_code_1_1_code__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class_code_1_1_code_a787ea8b4b16cbf07970ed34d0a1478f2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_code_1_1_code_a7206201a73f35d87080bfc693f50c992}{code\+\_\+url}})
+\item 
+int \mbox{\hyperlink{class_code_1_1_code_afec101e9df0663f16c13fec23cd55818}{count\+\_\+python\+\_\+loc}} (self, str root)
+\item 
+int \mbox{\hyperlink{class_code_1_1_code_abfeb7df8433a57af45875449235a80eb}{run\+\_\+flake8}} (self, str root)
+\item 
+float \mbox{\hyperlink{class_code_1_1_code_adf0c359c70e06ec3225f4a9571d4a87b}{get\+\_\+quality}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_1_1_code_a7206201a73f35d87080bfc693f50c992}{code\+\_\+url}} = code\+\_\+url
+\item 
+float \mbox{\hyperlink{class_code_1_1_code_a146d057a8d16196541ee460d7354fc46}{code\+\_\+availability}} = 1.\+0 if \mbox{\hyperlink{class_code_1_1_code_a7206201a73f35d87080bfc693f50c992}{code\+\_\+url}} else 0.\+0
+\item 
+float \mbox{\hyperlink{class_code_1_1_code_a40ae4b1e1a8d94b84682c01b295b6e75}{quality}} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_code_1_1_code_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_1_1_code_a787ea8b4b16cbf07970ed34d0a1478f2}\index{Code.Code@{Code.Code}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Code.Code@{Code.Code}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_code_1_1_code_a787ea8b4b16cbf07970ed34d0a1478f2} 
+ None Code.\+Code.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{code\+\_\+url}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_code_1_1_code_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_1_1_code_afec101e9df0663f16c13fec23cd55818}\index{Code.Code@{Code.Code}!count\_python\_loc@{count\_python\_loc}}
+\index{count\_python\_loc@{count\_python\_loc}!Code.Code@{Code.Code}}
+\doxysubsubsection{\texorpdfstring{count\_python\_loc()}{count\_python\_loc()}}
+{\footnotesize\ttfamily \label{class_code_1_1_code_afec101e9df0663f16c13fec23cd55818} 
+ int Code.\+Code.\+count\+\_\+python\+\_\+loc (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Count total lines across all .py files under root.
+Returns the total line count.
+\end{DoxyVerb}
+ \Hypertarget{class_code_1_1_code_adf0c359c70e06ec3225f4a9571d4a87b}\index{Code.Code@{Code.Code}!get\_quality@{get\_quality}}
+\index{get\_quality@{get\_quality}!Code.Code@{Code.Code}}
+\doxysubsubsection{\texorpdfstring{get\_quality()}{get\_quality()}}
+{\footnotesize\ttfamily \label{class_code_1_1_code_adf0c359c70e06ec3225f4a9571d4a87b} 
+ float Code.\+Code.\+get\+\_\+quality (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Code quality metric:
+- Clone the repository.
+- Run static analysis (Flake8) on Python files.
+- Let LinesOfCode = total lines across all .py files.
+- Let ErrorCount = total Flake8 issues.
+
+Score = max(0, 1 - LinesOfCode / (ErrorCount * 5))
+
+Special cases:
+- If no code_url or unsupported host -> 0.0
+- If clone fails or no Python files -> 0.0
+- If ErrorCount == 0 and there are Python files -> 1.0
+
+Returns a float in [0,1].
+\end{DoxyVerb}
+ Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_code_1_1_code_adf0c359c70e06ec3225f4a9571d4a87b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_code_1_1_code_abfeb7df8433a57af45875449235a80eb}\index{Code.Code@{Code.Code}!run\_flake8@{run\_flake8}}
+\index{run\_flake8@{run\_flake8}!Code.Code@{Code.Code}}
+\doxysubsubsection{\texorpdfstring{run\_flake8()}{run\_flake8()}}
+{\footnotesize\ttfamily \label{class_code_1_1_code_abfeb7df8433a57af45875449235a80eb} 
+ int Code.\+Code.\+run\+\_\+flake8 (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run flake8 on root
+Return total error/warning count.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_code_1_1_code_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_1_1_code_a146d057a8d16196541ee460d7354fc46}\index{Code.Code@{Code.Code}!code\_availability@{code\_availability}}
+\index{code\_availability@{code\_availability}!Code.Code@{Code.Code}}
+\doxysubsubsection{\texorpdfstring{code\_availability}{code\_availability}}
+{\footnotesize\ttfamily \label{class_code_1_1_code_a146d057a8d16196541ee460d7354fc46} 
+float Code.\+Code.\+code\+\_\+availability = 1.\+0 if \mbox{\hyperlink{class_code_1_1_code_a7206201a73f35d87080bfc693f50c992}{code\+\_\+url}} else 0.\+0}
+
+\Hypertarget{class_code_1_1_code_a7206201a73f35d87080bfc693f50c992}\index{Code.Code@{Code.Code}!code\_url@{code\_url}}
+\index{code\_url@{code\_url}!Code.Code@{Code.Code}}
+\doxysubsubsection{\texorpdfstring{code\_url}{code\_url}}
+{\footnotesize\ttfamily \label{class_code_1_1_code_a7206201a73f35d87080bfc693f50c992} 
+Code.\+Code.\+code\+\_\+url = code\+\_\+url}
+
+\Hypertarget{class_code_1_1_code_a40ae4b1e1a8d94b84682c01b295b6e75}\index{Code.Code@{Code.Code}!quality@{quality}}
+\index{quality@{quality}!Code.Code@{Code.Code}}
+\doxysubsubsection{\texorpdfstring{quality}{quality}}
+{\footnotesize\ttfamily \label{class_code_1_1_code_a40ae4b1e1a8d94b84682c01b295b6e75} 
+float Code.\+Code.\+quality = 0.\+0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Custom\+Objects/\mbox{\hyperlink{_code_8py}{Code.\+py}}\end{DoxyCompactItemize}

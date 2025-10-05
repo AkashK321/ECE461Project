@@ -13,14 +13,20 @@
 Run `python run_tests.py` in the terminal to execute the test suite
 
 ## Running the application:
-python main.py .\tests\testInput.txt
+python main.py ./tests/testInput.txt
 
 ## Running executable file:
 Install required libraries: ./run install
 Testing: ./run test
-Main program: ./run .\tests\testInput.txt
+Main program: ./run ./tests/testInput.txt
 
 note: Make sure to set your API key in a .env file in the root directory with the line: (the .env file is included in .gitignore)
 API_KEY="your_api_key_here"
 
 note: Set LOG_LEVEL (0, 1, or 2) and LOG_FILE path in a .env file
+
+## System Diagrams:
+
+Dependency Module Diagram: ![Dependency Module Diagram](./SystemStructureDiagrams/dep_graph.svg)
+
+View ./SystemStructureDiagrams/html/index.html for more detailed documentation and diagrams.
